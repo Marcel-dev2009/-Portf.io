@@ -1,5 +1,5 @@
 # -Portf.io
-# Portfolio of [Client's Name]  
+# Portfolio of Mr. John Paul  
 
 Welcome to the personal portfolio of **[Client's Name]**! This repository showcases their work, projects, and professional experiences in [client's field/industry, e.g., web development, graphic design, etc.].  
 
