@@ -1,7 +1,7 @@
 # -Portf.io
 # Portfolio of Mr. John Paul  
 
-Welcome to the personal portfolio of **[Client's Name]**! This repository showcases their work, projects, and professional experiences in [client's field/industry, e.g., web development, graphic design, etc.].  
+Welcome to the personal portfolio of **Mr.John Paul**! This repository showcases their work, projects, and professional experiences in [client's field/industry, e.g., web development, graphic design, etc.].  
 
 ## Table of Contents  
 - [About](#about)  
@@ -11,11 +11,11 @@ Welcome to the personal portfolio of **[Client's Name]**! This repository showca
 
 ## About  
 
-**[Client's Name]** is a [client's profession, e.g., web developer, graphic designer, etc.] with a passion for [briefly describe what they are passionate about in their field]. With experience in [mention relevant experience or background], they aim to create innovative solutions and deliver exceptional results for their clients.  
+**Mr.John Paul** is a [client's profession, e.g., web developer, graphic designer, etc.] with a passion for [briefly describe what they are passionate about in their field]. With experience in [mention relevant experience or background], they aim to create innovative solutions and deliver exceptional results for their clients.  
 
 ## Projects  
 
-Here are some highlighted projects **[Client's Name]** has worked on:  
+Here are some highlighted projects **Mr.John Paul** has worked on:  
 
 1. **[Project Title 1]**  
    - **Description:** Brief overview of the project.  
@@ -43,7 +43,7 @@ Here are some highlighted projects **[Client's Name]** has worked on:
 
 ## Contact  
 
-Feel free to reach out to **[Client's Name]**:  
+Feel free to reach out to **Mr.John Paul**:  
 
 - **Email:** [client's email]  
 - **LinkedIn:** [link to client's LinkedIn profile]  
