@@ -1,9 +1,5 @@
 @media (min-with: 796 ) and (max-width: 1024px) {
-   html{
-      scroll-behavior: smooth;
-      overflow : hidden;
-      position: relative;  
-    }
+
    .icon{
     width: 20px;
    }
@@ -20,10 +16,7 @@
 
 
 @media (max-width: 768px) {
-   html{
-      scroll-behavior: smooth;
-      overflow : hidden;
-    }
+   
     .logo {
         display: none;
     }

@@ -12,7 +12,7 @@
 }
 html{
   scroll-behavior: smooth;
-  overflow : hidden;
+  overflow-x: hidden;
 }
 body{
   margin: 0;
@@ -20,7 +20,7 @@ body{
   min-height: 100vh;
   background: linear-gradient(135deg, #0d1117, #1b1f30, #3b0f6f);
   background-size: 400% 400%;
-  animation: gradientMove 15s ease infinite;
+  animation: gradientMove 20s ease infinite;
   font: 400 var(--FONT-FAMILY);
   color: #fff;
 }
