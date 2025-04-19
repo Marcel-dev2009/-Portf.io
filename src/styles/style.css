@@ -10,6 +10,10 @@
   --FONT-FAMILY:  "Oswald", sans-serif;
   --FONT-SIZE: 1.2rem;
 }
+html{
+  scroll-behavior: smooth;
+  overflow : hidden;
+}
 body{
   margin: 0;
   padding: 0;
@@ -19,4 +23,95 @@ body{
   animation: gradientMove 15s ease infinite;
   font: 400 var(--FONT-FAMILY);
   color: #fff;
+}
+ body.blurEffect{
+   transition: 0.5s ease-in-out;
+   opacity: 0.2;
+ }
+.logo{
+   display: flex;
+   justify-content: flex-end;
+   transform: translateY(-100%);
+}
+.nav{
+  position: relative;
+    opacity: 0;
+    transform:translateY(-80px);
+   padding: 15px;
+   display: flex;
+   justify-content: flex-end;
+}
+.menu-toggle{
+   width:25px ;
+   height: 15px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   z-index: 100;
+   position: absolute;
+   top: 15px;
+}
+.menu-toggle span{
+  width: 100%;
+  height: 1px;
+  background: lightgray;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.menu{
+   
+  position: fixed;
+   top: -2rem;
+  right: -250rem;
+   width: 300px;
+  height: 42rem;
+  transition: right 0.5s ease-in-out;
+  display: flex;
+  padding: 1rem;
+  z-index: 10;
+  background: linear-gradient(135deg, #0d1117, #1b1f30, #3b0f6f);
+  animation: gradientMove 15s ease infinite;
+  border-left: 0.5px solid darkslategray;
+  transition: 1.2s ease-in-out;
+  padding-left: 20px;
+}
+.menu ul{
+  list-style: none;
+  display: flex;
+  place-content: center;
+  position:relative;
+  flex-direction: column;
+}
+.menu ul li {
+  white-space:nowrap;
+  z-index: 1;
+  text-align: center;
+  padding: 3rem;
+  column-gap: 1.5rem;
+  margin-left: 1rem;
+}
+
+.menu ul li a {
+  color: lightgray;
+  text-decoration: none;
+  font: 200 clamp(1.5rem,1.2rem,0.5rem) var(--FONT-FAMILY);
+  animation: fadeIN 3s ease-in-out 1 forwards;
+}
+.menu.active{
+  right: 0;
+}
+.menu-toggle.open span:nth-child(1){
+  transform: translateY(6px)
+  rotate(45deg);
+}
+.menu-toggle.open span:nth-child(2){
+  width: 0;
+}
+.menu-toggle.open span:nth-child(3){
+  transform: translateY(-8px)
+  rotate(-45deg);
+}
+.menu.menu-open{
+  opacity: 0.2;
+  transition: 0.5s ease-in-out;
 }
