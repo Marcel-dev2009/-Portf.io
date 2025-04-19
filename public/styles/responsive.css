@@ -2,6 +2,7 @@
    html{
       scroll-behavior: smooth;
       overflow : hidden;
+      position: relative;  
     }
    .icon{
     width: 20px;
