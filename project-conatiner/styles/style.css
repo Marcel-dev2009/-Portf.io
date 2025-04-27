@@ -1,4 +1,5 @@
 
+
 *,
 *::before,
 *::after{
@@ -9,13 +10,13 @@
 :root{
   --FONT-FAMILY:  "Oswald", sans-serif;
   --FONT-SIZE: 1.2rem;
+  --BG-FOR-TEXT:  linear-gradient(135deg, #c0bbbb, #aca3be);
 }
 html{
   scroll-behavior: smooth;
-  overflow-x: hidden;
-  overflow-y: hidden;
 }
-body{
+ body{
+ overflow-x: hidden;
   margin: 0;
   padding: 0;
   min-height: 100vh;
@@ -24,25 +25,89 @@ body{
   animation: gradientMove 15s ease infinite;
   font: 400 var(--FONT-FAMILY);
   color: #fff;
-}
- body.blurEffect{
-   transition: 0.5s ease-in-out;
-   opacity: 0.2;
  }
+#preLoader{
+  background: #21242D url(../images/loader\(2\).gif) no-repeat center center ;
+   background-size: 25%;
+  height: 100dvh;
+  width: 100%;
+  z-index: 100;
+  position: fixed;
+}
+.fade-in{
+  animation: fade 2s ease-in forwards;
+  opacity: 0;
+}
+header{
+  display:flex;
+  position :sticky;
+ top: 0;
+ z-index: 1000;
+ margin-bottom: 2rem;
+ transition: background-color 0.3s ease;
+ width: 100%;
+}
+.navigation-menu{
+     padding-top: min(1rem , 6%);
+     margin-left:48em;
+     cursor: pointer;
+}
+.navigation-menu ul{
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  position:relative;
+
+}
+
+.navigation-menu ul li a {
+   text-decoration : none;
+   font: 200 var(--FONT-SIZE) var(--FONT-FAMILY);
+    background:var(--BG-FOR-TEXT);
+    position:relative;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+   -webkit-text-fill-color: transparent;
+   white-space: nowrap;
+}
+.navigation-menu a::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 0;
+  bottom: -5px;
+  height: 0.5px;
+  background-color: rgb(170, 155, 164);
+  transition: width 0.3s ease;
+
+}
+.navigation-menu  a:hover{
+    color: #a494b6;
+}
+.navigation-menu  a:hover::after{
+    width: 100%;  
+}
 .logo{
    display: flex;
    justify-content: flex-end;
-   transform: translateY(-100%);
+   transform: translateY(-120%);
+   gap: 1rem;
+   padding: min(1rem , 8%);
+}
+.icons{
+  width: 1.6rem;
+  margin-top:2rem;
 }
 .nav{
   position: relative;
     opacity: 0;
     transform:translateY(-80px);
-   padding: 15px;
+   padding: min(1rem , 6%); 
    display: flex;
    justify-content: flex-end;
 }
-.menu-toggle{
+/* .menu-toggle{
    width:25px ;
    height: 15px;
    display: flex;
@@ -61,19 +126,17 @@ body{
 }
 .menu{
    
-  position: fixed;
-   top: -2rem;
+  position: absolute;
+  top: -2rem;
   right: -250rem;
    width: 300px;
-  height: 42rem;
+  height: 100vh;
   transition: right 0.5s ease-in-out;
   display: flex;
   padding: 1rem;
   z-index: 10;
   background: linear-gradient(135deg, #0d1117, #1b1f30, #3b0f6f);
-  animation: gradientMove 15s ease infinite;
   border-left: 0.5px solid darkslategray;
-  transition: 1.2s ease-in-out;
   padding-left: 20px;
 }
 .menu ul{
@@ -95,7 +158,7 @@ body{
 .menu ul li a {
   color: lightgray;
   text-decoration: none;
-  font: 200 clamp(1.5rem,1.2rem,0.5rem) var(--FONT-FAMILY);
+  font: 200 var(--FONT-SIZE) var(--FONT-FAMILY);
   animation: fadeIN 3s ease-in-out 1 forwards;
 }
 .menu.active{
@@ -115,4 +178,217 @@ body{
 .menu.menu-open{
   opacity: 0.2;
   transition: 0.5s ease-in-out;
+} */
+main{
+   transform: translateY(-100px);
+}
+.hero-content{
+   font-weight:400;
+   font-family: var(--FONT-FAMILY);
+   margin: 0.5rem 1rem;
+   display: flex;
+}
+.intro{
+   margin-top: min(10em , 6%);
+}
+ .intro > pre{
+  color: whitesmoke;
+  font-family:var(--FONT-FAMILY); 
+  font-size: clamp(1rem, 6vw, 1.5rem);
+  white-space:nowrap;
+  opacity:0;
+  animation:  BuzzIN 2s ease-in-out 1 ;
+}
+.intro > h1{
+   background : linear-gradient(135deg, #979696, #aca3be);
+   background-clip : text;
+   font-size : clamp(1rem,6vw,2rem);
+   -webkit-background-clip: text;
+   white-space:nowrap;
+   -webkit-text-fill-color: transparent;
+  
+}
+h1 + h4{
+   font-size: clamp(1rem,6vw,1.2rem);
+   background: linear-gradient(135deg, #bbb7b7, #aca3be);
+   background-clip:text;
+   white-space:nowrap;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.hero--image-container{
+  margin-left: 30em;
+  border: 1px solid rgba(225, 225, 225, 0.2);
+  border-radius:20%;
+  max-width: 100vw;
+  background: rgba(225,225,225,0.1);
+  backdrop-filter: blur(20px);
+  box-shadow:0 8px 32px rgba(0,0,0,0.2);
+}
+ .about{
+  display: block;
+  animation: appear 2s linear 1;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+ }
+.about > h2{
+
+    font: 400 clamp(1rem, calc(6vw + 1rem), 2rem) var(--FONT-FAMILY);
+    border-top: 0.5px solid rgba(225, 225, 225, 0.2);
+    width: fit-content;
+    transform:translateX(40rem);
+}
+.about--container{
+   display: flex;
+   justify-content: space-between;
+}
+.about-content{
+    margin-left: 2rem;
+    position: relative;
+    width: 50%;
+}
+.introduction{
+    font: 200 clamp(1rem, calc(6vw + 1rem), 1.5rem) var(--FONT-FAMILY);
+    background: linear-gradient(135deg, #c0bbbb, #aca3be);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fade 2s ease-in-out 1 forwards;
+    border: 1px solid rgba(225, 225, 225, 0.2);
+    padding: min(4rem , 7%);
+
+    box-shadow: 0 0 1px #00f7ff, 
+            0 0 10px #3a0941, 
+            0 0 10px #171718, 
+            0 0 10px #231a41;
+
+}
+.about--image{
+   max-width: 100%;
+   height: auto;
+   border: 1px solid rgba(225, 225, 225, 0.2);
+   padding: min(2rem , 7%);
+   border-radius: 10px;
+   background: rgba(225,225,225,0.1);
+    backdrop-filter: blur(20px);
+    aspect-ratio: 1/1;
+}
+.article-container > h3{
+  text-align: center;
+  margin-top: 0.5px solid rgba(225, 225, 225, 0.2);
+    font: 200 clamp(1rem, calc(6vw + 1rem), 1.5rem) var(--FONT-FAMILY);
+}
+.article-content > h3{
+    font: 200 clamp(1rem, calc(6vw + 1rem), 1.5rem) var(--FONT-FAMILY);
+    border-bottom: 1px solid rgba(225, 225, 225, 0.2);
+    width: fit-content;
+    margin: min(1rem, 7%);
+}
+ .content{
+  font: 250 clamp(1rem, calc(6vw + 1rem), 1.5rem) var(--FONT-FAMILY);
+  padding: min(2rem , 7%);
+  background: linear-gradient(135deg, #c0bbbb, #aca3be);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.swiper {
+  width: 90%;
+  max-width: 900px;
+  height: 400px;
+  margin: 50px auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: 20px;
+}
+footer{
+  background-color: #171718;
+
+  background: rgba(0,0,0,0.2);
+}
+.footer-container{
+  display: flex;
+  
+}
+.footer-content > h3{
+  font: 200 clamp(1rem, calc(6vw + 1rem), 1.5rem) var(--FONT-FAMILY);
+   border-top: 0.5px solid rgba(225, 225, 225, 0.2);
+   padding: min(2rem , 7%);
+}
+.social{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: min(2rem , 7%);
+}
+.social > a {
+  text-decoration: none;
+  font: 200 clamp(1rem, calc(6vw + 1rem), 1.2rem) var(--FONT-FAMILY);
+  color: #fff;
+   gap: 1rem;
+}
+.conclusion-content{
+  font: 200 clamp(1rem, calc(6vw + 1rem), 1.5rem) var(--FONT-FAMILY);
+  text-align: center;
+}
+.footer-bottom{
+  font: 200 clamp(1rem, calc(6vw + 1rem), 1.2rem) var(--FONT-FAMILY);
+  border-bottom: 1px solid rgba(225, 225, 225, 0.2);
+  width: fit-content;
+  margin: min(1rem, 7%);
+   text-align: center;
+}
+.footer-img{
+  border: 0.5px solid rgba(225, 225, 225, 0.2);
+  padding: 0.5rem;
+  width: fit-content;
+  background: rgba(225,225,225,0.1);
+  backdrop-filter: blur(20px);
+  height: 500px;
+  margin-top: 1rem;
+}
+button{
+  border: none;
+  padding: min(1rem , 7%);
+  width: 50%;
+  border-radius: 10px;
+  font: 200 clamp(1rem, calc(6vw + 1rem), 1.1rem) var(--FONT-FAMILY);
+  background: rgba(225, 225, 225, 0.2);
+  backdrop-filter: blur(20px);
+  overflow: hidden;
+  transition: color 0.5s ease-in-out;
+  z-index: 1;
+  position: relative;
+}
+.btn{
+  width: 10%;
+  margin-left: 2rem;
+}
+button a{
+  text-decoration: none;
+  color: #fff;
+}
+button a::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: top 0.5s ease-in-out;
+  top: -100%  ;
+  z-index: -1;
+  background: rgb(207, 194, 202);
+}
+button a:hover::before{
+  top: 0;
+}
+button a:hover{
+  color: #000;
 }
