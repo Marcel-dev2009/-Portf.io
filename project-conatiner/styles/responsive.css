@@ -56,12 +56,12 @@
          flex-direction: column; 
       }
       .hero--image-container {
-          margin-left: 0rem;
+          transform: translateX(-5px);
           width : 350px;
       }
        .hero--image{
         width: 300px;
-         transform: translateX(3px);
+         transform: translateX(5px);
        }
        .about--container {
          flex-direction: column;
