@@ -1,4 +1,6 @@
 import { ContentLoaded } from './dom.js';
+import { devService , navMenu , faqContent} from './src.js';
+
 
 /* const menuToggle = document.querySelector('.menu-toggle')
 const menu = document.querySelector('.menu');
@@ -24,72 +26,7 @@ window.addEventListener('scroll',() => {
       ContentLoaded();
     })
 
-    const texts = [" a Nollywood Film Director", " an Actor", " a Film maker", " a Content Creator"];
-    let count = 0;
-    let index = 0;
-    let currentText = '';
-    let letter = '';
-    
-    function typeEffect() {
-      if (count === texts.length) {
-        count = 0;
-      }
-      currentText = texts[count];
-      letter = currentText.slice(0, ++index);
-    
-      document.querySelector(".typing").textContent = letter;
-    
-      if (letter.length === currentText.length) {
-        setTimeout(eraseEffect, 1500); // wait before erasing
-      } else {
-        setTimeout(typeEffect, 150);
-      }
-    }
-    
-    function eraseEffect() {
-      letter = currentText.slice(0, --index);
-      document.querySelector(".typing").textContent = letter;
-    
-      if (letter.length === 0) {
-        count++;
-        setTimeout(typeEffect, 300);
-      } else {
-        setTimeout(eraseEffect, 100);
-      }
-    }
-    
-    typeEffect();
- 
-     const heroINtro = [
-      `I am Johnpaul Nwanganga a distinguished filmmaker, director, and actor with a proven track record in the Nigerian film industry. 
-      Having honed my craft through various roles, including production assistant and crew positions, I have risen to prominence as a prolific director, 
-      known for my compelling storytelling and technical expertise.
-      A respected leader in the industry, I serve as the National Director of Social and 
-      Welfare for the Directors Guild of Nigeria (DGN). I previously held esteemed positions,
-      including President of the Igbo   filmmakers & Igbo Movie Producers Association of Nigeria (IMPAN)
-      and Chapter Chairman of the Association of Movie Producers (AMP), Enugu State Chapter. Update Member 
-      of Actors Guild of Nigeria.`
-
-   ];
-
-   let text = 0;
-   let key  = 0;
-   let mainText = '';
-   let wordsDisplayed = '';
-
-   function DynamicIntro() {
-       if (text === heroINtro.length) {
-           text = 0;
-       } 
-       mainText = heroINtro[text];
-       wordsDisplayed = mainText.slice(0, ++key);
-      
-       document.querySelector(".introduction").textContent = wordsDisplayed;
-         setTimeout(DynamicIntro, 50);
-   } 
-
- 
-      DynamicIntro(); 
+  
    const loader = document.getElementById('preLoader');
    window.addEventListener('load',() => {
      setTimeout(() => {
@@ -105,40 +42,144 @@ window.addEventListener('scroll',() => {
     const header = document.querySelector('.header');
         window.addEventListener('scroll', () => {
           if (window.scrollY > 50) { 
-            header.style.backgroundColor = 'rgba(35,28,63,1)'; // add your color
+            header.style.backgroundColor = 'rgba(35,28,63,1)'; 
           } else {
-            header.style.backgroundColor = 'transparent'; // back to transparent
+            header.style.backgroundColor = 'transparent'; 
           }
         })
         AOS.init({
-          once: false,    // Animate every time you scroll up and down (optional)
-          mirror: true,   // Animate when scrolling up too (optional)
-          delay: 0,       // No delay, animate immediately
-          duration: 800,  // Speed of animation (milliseconds)
-          easing: 'ease-in-out', // Smooth animation
-          offset: 10,    // Distance (px) before triggering animation
+          once: false, 
+          mirror: true,   
+          delay: 0,       
+          duration: 800,  
+          easing: 'ease-in-out', 
+          offset: 10,    
         });
         const swiper = new Swiper('.swiper', {
-          loop: true, // Infinite scroll
-          slidesPerView: 1, // One image visible at a time
-          spaceBetween: 20, // Space between slides (optional)
+          loop: true, 
+          slidesPerView: 0, 
+          spaceBetween: 20, 
         
-          // If you want next/prev buttons
           navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
           },
-        
-          // If you want pagination bullets
+ 
           pagination: {
             el: '.swiper-pagination',
             clickable: true,
           },
         
-          // If you want autoplay (optional)
+      
           autoplay: {
             delay: 2500, // 2.5 seconds
             disableOnInteraction: false,
           },
         });
         
+    
+              let navHTML = '';
+      let currentPage = window.location.pathname;
+      let itemsToshow = [];
+      if (currentPage.includes('index.html')) {
+        itemsToshow = navMenu.slice(0 , 4);
+      }
+      if(currentPage.includes('project.html')) {
+        itemsToshow = navMenu.slice(4 );
+      };  
+      itemsToshow.forEach((list) => {
+      navHTML += `
+      
+              <li><a href="${list.href}">${list.text}</a></li>
+          
+      `;
+      })
+
+  const navContainer = document.querySelector('.navList');
+   navContainer.innerHTML = navHTML;
+   console.log(currentPage);
+   
+    
+
+  
+      
+    let ServiceHTML = '';
+    devService.forEach((service , index) =>{
+        ServiceHTML += `
+            <figure>
+      <img src="${service.image}" alt="This is the icon of the service we offer " loading="lazy" width="300px" height="250px">
+          <figcaption>
+      <h4 class="text-${index}">${service.text}</h4>
+    <p class="info-${index}">${service.info}</p>
+                              
+          </figcaption>
+        </figure>
+        `
+    });
+      document.querySelector('.service-content').innerHTML = ServiceHTML;
+
+        const slider = new Swiper ('.swiper' , {
+           effect : 'cards',
+           grabcursor : true,
+           initialSlide : 4,
+           speed : 500,
+           rotate : true,
+           mousewheel : {
+            invert : false,
+           },
+            loop : true ,
+           autoplay : {
+             delay : 2000,
+             disableOnInteraction : false
+           },
+           slideShadows: false,
+        });
+
+      let faqHTML = '';
+      faqContent.forEach((content) => {
+         faqHTML += `
+        <div class="faq">
+               <button class="faq-question">${content.Question}</button>  <br>
+                      <div class="faq-answer">
+                      <p>
+                      ${content.Answer}
+                      </p>
+                        </div>   <!-- answer end -->
+                        </div>
+                    
+         `;
+      })
+      document.querySelector('.faq-container').innerHTML = faqHTML;
+
+      document.querySelectorAll('.faq-question').forEach(button => {
+        button.addEventListener('click', () => {
+          const faq = button.closest('.faq'); // Find the closest parent .faq
+          faq.classList.toggle('open'); // Toggle the open class on that specific FAQ
+        });
+      });
+    
+      function sendMail() {
+        let params = {
+          name: document.getElementById('name').value,
+          email: document.getElementById('email').value,
+          subject: document.getElementById('subject').value,
+          message: document.getElementById('message').value,
+        };
+      
+        emailjs.send('service_0tc45mg', 'template_jn0hl7d', params)
+          .then(function(response) {
+            alert('Email sent!');
+          }, function(error) {
+            alert('FAILED... ' + JSON.stringify(error));
+          });
+      }
+      
+      document.getElementById('submit-btn').addEventListener('click', function (e) {
+        e.preventDefault(); // prevent form reload if inside a <form>
+        sendMail();
+      });
+      
+      
+        
+     
+         
