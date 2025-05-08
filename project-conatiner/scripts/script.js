@@ -2,7 +2,7 @@ import { ContentLoaded } from './dom.js';
 import { devService , navMenu , faqContent} from './src.js';
 
 
-/* const menuToggle = document.querySelector('.menu-toggle')
+const menuToggle = document.querySelector('.menu-toggle')
 const menu = document.querySelector('.menu');
 
 menuToggle.addEventListener('click', () => {
@@ -20,7 +20,7 @@ window.addEventListener('scroll',() => {
          if(menu.classList.contains('active')){
           body.classList.toggle('blurEffect')
          }  
-}) */
+})
 
    document.addEventListener('DOMContentLoaded', () => {
       ContentLoaded();
