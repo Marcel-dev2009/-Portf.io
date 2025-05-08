@@ -58,12 +58,12 @@
       .hero--image-container {
           margin-left: 0rem;
           width : 350px;
-          transform: translateX(-50px);
       }
        .hero--image{
         width: 300px;
-        transform: translateX(-10px);
-
+         display: flex;
+         justify-content: center;
+         align-items: center;
        }
        .about--container {
          flex-direction: column;
