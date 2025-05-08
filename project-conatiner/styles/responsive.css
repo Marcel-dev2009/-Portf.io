@@ -57,7 +57,7 @@
       }
       .hero--image-container {
           margin-left: 0rem;
-          width : 200px;
+          width : 350px;
           transform: translateX(-50px);
       }
        .hero--image{
@@ -98,7 +98,8 @@
       }
       .image img{
           width: 75%;
-          margin-left: 2rem;
+          margin-left: 1rem;
+          margin-bottom: 1rem;
       }
       .conclusion-content{
         font-size: 1rem;
@@ -120,7 +121,7 @@
   }
   .ft-image{
      width: 200px;
-    
+    margin-left: 1.5rem;
   }
   .service-table thead {
    display: none;
