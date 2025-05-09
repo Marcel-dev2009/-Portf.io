@@ -1,5 +1,5 @@
 import { ContentLoaded } from './dom.js';
-import { devService , navMenu , faqContent} from './src.js';
+import { devService ,  faqContent} from './src.js';
 
 
 const menuToggle = document.querySelector('.menu-toggle')
@@ -78,31 +78,6 @@ window.addEventListener('scroll',() => {
         });
         
     
-              let navHTML = '';
-      let currentPage = window.location.pathname;
-      let itemsToshow = [];
-      if (currentPage.includes('index.html')) {
-        itemsToshow = navMenu.slice(0 , 4);
-      }
-      if(currentPage.includes('project.html')) {
-        itemsToshow = navMenu.slice(4 );
-      };  
-      itemsToshow.forEach((list) => {
-      navHTML += `
-      
-              <li><a href="${list.href}">${list.text}</a></li>
-          
-      `;
-      })
-
-  const navContainer = document.querySelector('.navList');
-   navContainer.innerHTML = navHTML;
-   console.log(currentPage);
-   
-    
-
-  
-      
     let ServiceHTML = '';
     devService.forEach((service , index) =>{
         ServiceHTML += `
@@ -133,6 +108,15 @@ window.addEventListener('scroll',() => {
              disableOnInteraction : false
            },
            slideShadows: false,
+           1024 : {
+            slidesPerView : 3,
+           },
+           768 : {
+            slidesPerView : 2
+           },
+           450 : {
+            slidesPerView : 1
+           }
         });
 
       let faqHTML = '';

@@ -14,7 +14,7 @@
   },
   {
     text : 'Contact',
-    href : 'project.html#contact-me',
+    href : 'project.html#contact-us',
   },
   {
     text : 'Service Details',

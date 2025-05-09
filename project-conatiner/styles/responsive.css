@@ -99,8 +99,28 @@ width: 300px;
   .image img {
     width: 80%;
   }
-  .social > a {
+  .social > a ,
+  .service-description,
+  .details > h3{
     font-size: 1rem;
+ }
+ .details > p {
+  font-size : 0.90rem;
+ }
+ .details{
+  transform: translateY(-250px);
+ }
+.service-info{
+  font-size : 1rem;
+}
+.service-content{
+  grid-template-columns: 1fr ;
+}
+ .statement{
+   width : 200px;
+ }
+ .filmography{
+  flex-direction: column;
  }
  .footer-img{
     height: 50%;
@@ -366,3 +386,120 @@ width: 300px;
   border-bottom: none;
 }
 }
+
+@media (max-width: 1024px) {
+  .swiper {
+    max-width: 700px;
+    padding: 1.5rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper {
+    max-width: 500px;
+    padding: 1rem 0;
+  }
+
+  .swiper-slide {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .swiper {
+    max-width: 100%;
+    padding: 0.5rem 0;
+  }
+
+  .swiper-slide {
+    padding : 0.5rem;
+}
+}
+
+@media (max-width: 600px) {
+  .service-content {
+    grid-template-columns: 1fr;
+    margin-left: 0;
+  }
+
+  .service-info {
+    font: 200 clamp(1rem, 6vw, 1.1rem) var(--FONT-FAMILY);
+    padding: 0 1rem;
+  }
+
+  figure {
+    padding-bottom: 1rem;
+  }
+
+  .service-content img {
+    padding: 1rem;
+    margin: 0.5rem;
+  }
+
+  figcaption h4 {
+    font: 250 1rem var(--FONT-FAMILY);
+  }
+
+  figcaption p {
+    font: 250 0.8rem var(--FONT-FAMILY);
+  }
+}
+
+
+@media (max-width: 992px) {
+  fieldset {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(0);
+  }
+
+  .Contact-info > h3,
+  .Contact-info > pre {
+    margin-left: 0;
+    transform: translateY(0);
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .submit-container {
+    text-align: center;
+  }
+
+  .submit-button {
+    width: 100%;
+    max-width: 300px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  input,
+  textarea {
+    padding: 1rem;
+    font-size: 14px;
+  }
+
+  .Contact-info > h3 {
+    font-size: 1.2rem;
+  }
+
+  .Contact-info > pre {
+    font-size: 1rem;
+  }
+
+  label {
+    font-size: 1rem;
+  }
+
+  .submit-button {
+    padding: 10px 20px;
+  }
+}
+

@@ -18,7 +18,7 @@ html{
   width: 100%;
 }
  body{
- overflow-x: hidden;
+/*  overflow-x: hidden; */
   margin: 0;
   padding: 0;
   min-height: 100vh;
@@ -487,6 +487,7 @@ button a:hover{
     border-top: 0.5px solid rgba(225, 225, 225, 0.2);
     border-bottom: 0.5px solid rgba(225, 225, 225, 0.2);
     width: fit-content;
+    background: transparent;
 }
 .service-info{
      font: 200 clamp(1rem , 8vw , 1.2rem) var(--FONT-FAMILY);
@@ -655,27 +656,13 @@ textarea::placeholder{
   visibility: hidden;
 }
 
-.button-loader {
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 20px;
-  height: 20px;
-  border: 3px solid rgba(255,255,255,0.3);
-  border-radius: 50%;
-  border-top-color: #fff;
-  animation: spin 1s ease-in-out infinite;
-}
+
 
 .submit-button.loading .button-loader {
   display: block;
 }
 
-@keyframes spin {
-  to { transform: translate(-50%, -50%) rotate(360deg); }
-}
+
 
 /* Disabled state */
 .submit-button:disabled {
