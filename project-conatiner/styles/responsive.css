@@ -449,9 +449,7 @@ width: 300px;
 @media (max-width: 992px) {
   fieldset {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transform: translateX(0);
+    margin-left: 2rem;
   }
 
   .Contact-info > h3,

@@ -93,37 +93,39 @@ window.addEventListener('scroll',() => {
     });
       document.querySelector('.service-content').innerHTML = ServiceHTML;
 
-        const slider = new Swiper ('.swiper' , {
-           effect : 'cards',
-           grabcursor : true,
-           initialSlide : 4,
-           speed : 500,
-           rotate : true,
-           mousewheel : {
-            invert : false,
-           },
-            loop : true ,
-           autoplay : {
-             delay : 2000,
-             disableOnInteraction : false
-           },
-           observer : true,
-           observeParents : true,
-           slideShadows: false,
-           lazy : {
-            loaPrevNext : true,
-          loadOnTransitionStart : true,
-           },
-           1024 : {
-            slidesPerView : 3,
-           },
-           768 : {
-            slidesPerView : 2
-           },
-           450 : {
-            slidesPerView : 1
-           }
-        });
+     const slider = new Swiper('.swiper', {
+  effect: 'cards',
+  grabCursor: true,
+  initialSlide: 4,
+  speed: 500,
+  rotate: true,
+  mousewheel: {
+    invert: false,
+  },
+  loop: true,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false
+  },
+  observer: true,
+  observeParents: true,
+  slideShadows: false,
+  lazy: {
+    loadPrevNext: true,
+    loadOnTransitionStart: true,
+  },
+  breakpoints: {
+    450: {
+      slidesPerView: 1
+    },
+    768: {
+      slidesPerView: 2
+    },
+    1024: {
+      slidesPerView: 3
+    }
+  }
+});
 
       let faqHTML = '';
       faqContent.forEach((content) => {
