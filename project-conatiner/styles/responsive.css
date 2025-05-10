@@ -485,7 +485,11 @@ width: 300px;
     padding: 1rem;
     font-size: 14px;
   }
-
+   .faq-intro{
+    white-space: wrap;
+    font-size: 0.90rem;
+    margin-bottom : 0.5rem;
+   }
   .Contact-info > h3 {
     font-size: 1.2rem;
   }

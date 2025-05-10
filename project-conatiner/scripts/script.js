@@ -107,7 +107,13 @@ window.addEventListener('scroll',() => {
              delay : 2000,
              disableOnInteraction : false
            },
+           observer : true,
+           observeParents : true,
            slideShadows: false,
+           lazy : {
+            loaPrevNext : true,
+          loadOnTransitionStart : true,
+           },
            1024 : {
             slidesPerView : 3,
            },
