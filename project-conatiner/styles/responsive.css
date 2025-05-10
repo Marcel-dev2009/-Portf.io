@@ -1,7 +1,7 @@
 
 
  @media (max-width: 768px) {
-  body{
+  html{
     overflow-x: hidden;
   }
   .navigation-menu {
@@ -180,7 +180,7 @@ width: 300px;
 
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  body{
+  html{
     overflow-x: hidden;
   }
   .navigation-menu {
@@ -305,7 +305,7 @@ width: 300px;
 }
 
 @media (min-width: 1025px) and (max-width: 1200px) {
-  body{
+  html{
     overflow-x: hidden;
   }
   .navigation-menu {
