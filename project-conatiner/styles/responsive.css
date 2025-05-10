@@ -113,6 +113,7 @@ width: 300px;
 }
 .service-content{
   grid-template-columns: 1fr ;
+  margin-left: 2rem;
 }
  .statement{
    width : 200px;
@@ -178,9 +179,7 @@ width: 300px;
 
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  html{
-    overflow-x: hidden;
-  }
+ 
   .navigation-menu {
     margin-left: 20em;
   }
@@ -303,9 +302,7 @@ width: 300px;
 }
 
 @media (min-width: 1025px) and (max-width: 1200px) {
-  html{
-    overflow-x: hidden;
-  }
+  
   .navigation-menu {
     margin-left: 35em;
   }
@@ -447,7 +444,7 @@ width: 300px;
 @media (max-width: 992px) {
   fieldset {
     flex-direction: column;
-    margin-left: 2rem;
+    margin-left: 2.5rem;
   }
 
   .Contact-info > h3,
@@ -462,6 +459,7 @@ width: 300px;
   textarea {
     width: 100%;
     max-width: 90%;
+    
   }
 
   .submit-container {
