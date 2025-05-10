@@ -1,9 +1,7 @@
 
 
  @media (max-width: 768px) {
-  html{
-    overflow-x: hidden;
-  }
+  
   .navigation-menu {
     display: none;
   }
