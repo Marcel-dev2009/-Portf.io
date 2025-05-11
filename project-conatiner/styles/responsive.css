@@ -177,7 +177,9 @@ body {
   .statement {
     width: 200px;
   }
-  
+  .statement > span{
+    transform: translateY(-200px);
+  }
   .filmography {
     flex-direction: column;
   }
@@ -513,6 +515,7 @@ body {
 @media (max-width: 992px) {
   fieldset {
     flex-direction: column;
+     transform : translateX(20px);
   }
   
   .Contact-info > h3,
@@ -522,20 +525,24 @@ body {
     text-align: center;
     padding: 0 1rem;
   }
-  
-  input,
-  textarea {
-    width: 100%;
+   
+
+  input{
+    width: 50%;
     max-width: 90%;
   }
-  
+  textarea{
+    width: 75%;
+    max-width: 90%;
+  }
   .submit-container {
     text-align: center;
   }
   
   .submit-button {
-    width: 100%;
+    width: 15%;
     max-width: 300px;
     font-size: 1rem;
+/*     transform : translateX(50px); */
   }
 }
