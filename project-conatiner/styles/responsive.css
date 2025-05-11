@@ -84,7 +84,14 @@ body {
     display: flex;
     right: 1rem;
   }
-  
+   .info-0,
+   .info-1{
+     transform: translateY(2.4px);
+   }
+   .text-0,
+   .text-1{
+    transform: translateY(3px);
+   }
   button {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -414,11 +421,30 @@ body {
   .service-table td:last-child {
     border-bottom: none;
   }
+  .service-content{
+    transform: translateX(60px);
+    grid-template-columns: repeat(2, 1fr);
+  }
   
   /* Swiper adjustments */
   .swiper {
     max-width: 700px;
     padding: 1.5rem 0;
+  }
+ 
+    .ft-image{
+    width: 250px ;
+     transform : translateX(-10px);
+  }
+  input{
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 1200px;
+  }
+  textarea{
+    width: 100%;
+    max-width: 1200px;
+    margin-left: 2.5rem;
   }
 }
 
@@ -470,8 +496,9 @@ body {
   }
   
   .ft-image {
-    width: 200px;
-    margin-left: 1.5rem;
+    width: 250px;
+     transform: translateX(-1.5px);
+     border-radius: 20px;
   }
   
   /* Service table responsive design */
@@ -525,10 +552,10 @@ body {
     text-align: center;
     padding: 0 1rem;
   }
-   
+  
 
   input{
-    width: 50%;
+    width: 40%;
     max-width: 90%;
   }
   textarea{
