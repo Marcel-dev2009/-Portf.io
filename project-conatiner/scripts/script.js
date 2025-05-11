@@ -94,15 +94,15 @@ window.addEventListener('scroll',() => {
       document.querySelector('.service-content').innerHTML = ServiceHTML;
 // Initialize the Swiper slider
 const slider = new Swiper('.swiper', {
-  effect: 'cards',
-  grabCursor: true,
-  initialSlide: 4,
+  effect: 'fade',
+/*   initialSlide: 1, */
   speed: 500,
   rotate: true,
   mousewheel: {
     invert: false,
   },
   loop: true,
+
   autoplay: {
     delay: 2000,
     disableOnInteraction: false
@@ -114,40 +114,29 @@ const slider = new Swiper('.swiper', {
     loadPrevNext: true,
     loadOnTransitionStart: true,
   },
-  breakpoints: {
-    450: {
-      slidesPerView: 1
-    },
-    768: {
-      slidesPerView: 2
-    },
-    1024: {
-      slidesPerView: 3
-    }
-  }
+
 });
 
-// Set up Intersection Observer to pause/play the slider when visibility changes
+
 const swiperContainer = document.querySelector('.swiper');
 
-// Create options for the observer
 const observerOptions = {
-  root: null, // Use the viewport as the root
-  rootMargin: '0px', // No margin
-  threshold: 0.1 // Trigger when at least 10% of the element is visible
+  root: null, 
+  rootMargin: '0px', 
+  threshold: 0.1 
 };
 
-// Create the Intersection Observer
+
 const swiperObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      // Element is visible in the viewport, start autoplay
+
       if (slider.autoplay && slider.autoplay.paused) {
         slider.autoplay.start();
         console.log('Slider is visible, autoplay started');
       }
     } else {
-      // Element is not visible in the viewport, pause autoplay
+      
       if (slider.autoplay && !slider.autoplay.paused) {
         slider.autoplay.stop();
         console.log('Slider is not visible, autoplay stopped');
@@ -156,11 +145,11 @@ const swiperObserver = new IntersectionObserver((entries) => {
   });
 }, observerOptions);
 
-// Start observing the Swiper container
+
 swiperObserver.observe(swiperContainer);
 
-// Optional: Clean up the observer when no longer needed
-// Example: If the slider is part of a single-page application that may unmount components
+
+
 function cleanupObserver() {
   if (swiperObserver && swiperContainer) {
     swiperObserver.unobserve(swiperContainer);
@@ -185,8 +174,8 @@ function cleanupObserver() {
 
       document.querySelectorAll('.faq-question').forEach(button => {
         button.addEventListener('click', () => {
-          const faq = button.closest('.faq'); // Find the closest parent .faq
-          faq.classList.toggle('open'); // Toggle the open class on that specific FAQ
+          const faq = button.closest('.faq'); 
+          faq.classList.toggle('open'); 
         });
       });
     

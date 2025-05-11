@@ -1,7 +1,7 @@
 /* Base mobile-first approach - applies to all devices */
 body {
   overflow-x: hidden; /* Prevents horizontal scrolling globally */
-  overflow-y: auto;   /* Ensures vertical scrolling works properly */
+/*   overflow-y: auto;   */ 
 }
 
 /* Small devices (mobile phones, up to 480px) */
