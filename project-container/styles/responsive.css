@@ -557,8 +557,9 @@ body {
     max-width: 90%;
   }
   textarea{
-    width: 75%;
+    width: 80%;
     max-width: 90%;
+    transform: translateX(15px);
   }
   .submit-container {
     text-align: center;
@@ -568,6 +569,6 @@ body {
     width: 15%;
     max-width: 300px;
     font-size: 1rem;
-/*     transform : translateX(50px); */
+    transform : translateX(30px);
   }
 }
