@@ -185,7 +185,10 @@ body {
     width: 200px;
   }
   .statement > span{
-    transform: translateY(-200px);
+   display: none;
+  }
+  .statement img{
+    display: none;
   }
   .filmography {
     flex-direction: column;
