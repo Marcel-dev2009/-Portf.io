@@ -183,11 +183,6 @@ body {
   /* Other elements */
   .statement {
     width: 200px;
-  }
-  .statement > span{
-   display: none;
-  }
-  .statement img{
     display: none;
   }
   .filmography {
