@@ -306,6 +306,7 @@ h1 + h4{
 }
 .image img {
      width: 35%;
+     height: auto;
      border-radius: 20px;
      max-width: 900px;
      
