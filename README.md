@@ -35,7 +35,4 @@ Feel free to reach out to **Mr.John Paul**:
 
 ![GIF](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExemloaDB2NW9uYjgyNmd5YWNhM2Z1aG4xbHFhNDQzNXJpYXMzeHFueiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/H6cndHjOnx9FZwN1LL/giphy.gif)
 
-
-
-
 Thank you for visiting **[John Paul]**'s portfolio. We hope you find the work inspiring!  
