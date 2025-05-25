@@ -1,53 +1,38 @@
 # -Portf.io
 # Portfolio of Mr. John Paul  
 
-Welcome to the personal portfolio of **Mr.John Paul**! This repository showcases their work, projects, and professional experiences in [client's field/industry, e.g., web development, graphic design, etc.].  
+Welcome to the personal portfolio of **Mr.John Paul**! This repository showcases their work, projects, and professional experiences in [Film Production , directing and acting ].  
 
 ## Table of Contents  
-- [About](#about)  
-- [Projects](#projects)  
+- [Carrer Overview](#Carrer-Overview)  
+- [Service-Details](project.html#ourServices)  
 - [Skills](#skills)  
 - [Contact](#contact)  
 
 ## About  
 
-**Mr.John Paul** is a [client's profession, e.g., web developer, graphic designer, etc.] with a passion for [briefly describe what they are passionate about in their field]. With experience in [mention relevant experience or background], they aim to create innovative solutions and deliver exceptional results for their clients.  
-
-## Projects  
-
-Here are some highlighted projects **Mr.John Paul** has worked on:  
-
-1. **[Project Title 1]**  
-   - **Description:** Brief overview of the project.  
-   - **Technologies Used:** [list the technologies or tools used]  
-   - **Live Demo:** [link to the live demo or website]  
-   - **GitHub Repository:** [link to GitHub repository]  
-
-2. **[Project Title 2]**  
-   - **Description:** Brief overview of the project.  
-   - **Technologies Used:** [list the technologies or tools used]  
-   - **Live Demo:** [link to the live demo or website]  
-   - **GitHub Repository:** [link to GitHub repository]  
-
-3. **[Project Title 3]**  
-   - **Description:** Brief overview of the project.  
-   - **Technologies Used:** [list the technologies or tools used]  
-   - **Live Demo:** [link to the live demo or website]  
-   - **GitHub Repository:** [link to GitHub repository]  
+**Mr.John Paul** is a Film Producer with a passion for storytelling and bringing creative visions to life. With experience in [Film Production , Directing and acting], they aim to produce compelling films that inspire, entertain, and resonate with audiences worldwide.
 
 ## Skills  
 
-- **Languages & Frameworks:** [list relevant programming languages or frameworks, e.g., HTML, CSS, JavaScript, etc.]  
-- **Design Tools:** [list tools used, e.g., Adobe Illustrator, Figma, etc.]  
-- **Other Skills:** [any additional relevant skills, e.g., SEO, content writing, etc.]  
+- **Languages & Background:** Nigerian , Igbo and Nollywood moviestar  
+- **Design Tools:** [Lighting and movie shooting Cameraset]  
+- **Other Skills:** [ Choroegraphy writing , content writing, etc.]  
 
 ## Contact  
 
 Feel free to reach out to **Mr.John Paul**:  
 
-- **Email:** [client's email]  
-- **LinkedIn:** [link to client's LinkedIn profile]  
-- **GitHub:** [link to client's GitHub profile]  
-- **Portfolio Website:** [link to client's official portfolio website]  
+- **Insatgram:** [https://instagram.com/Johnpaulnwanganga1]  
+- **Facebook:** [https://facebook.com/JP-Nwanganga]  
+- **Tiktok:** [https://www.tiktok.com/@JP-Nwanganga]  
+- **Tel:** [tel:+2347065483866]  
+- **Portfolio Website:** [pauljohnco.vercel.app]
 
-Thank you for visiting **[Client's Name]**'s portfolio. We hope you find the work inspiring!  
+- ##Project -- Vid
+- 
+![Funny GIF](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmhneG0wNzE1bmFlaXppbW00cG41cHNqZTBjMzVsbW50Z29yZjhweSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/330gT00zdXDdBQaXJF/giphy.gif)
+
+![GIF](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExemloaDB2NW9uYjgyNmd5YWNhM2Z1aG4xbHFhNDQzNXJpYXMzeHFueiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/H6cndHjOnx9FZwN1LL/giphy.gif)
+
+Thank you for visiting **[John Paul]**'s portfolio. We hope you find the work inspiring!  
