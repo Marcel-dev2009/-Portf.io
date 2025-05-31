@@ -92,6 +92,9 @@ window.addEventListener('scroll',() => {
         `
     });
       document.querySelector('.service-content').innerHTML = ServiceHTML;
+  
+
+        
 // Initialize the Swiper slider
 const slider = new Swiper('.swiper', {
   effect: 'fade',
@@ -200,7 +203,6 @@ function cleanupObserver() {
         sendMail();
       });
       
-      
-        
+
      
          

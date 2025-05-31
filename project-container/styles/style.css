@@ -28,18 +28,8 @@ html{
   font: 400 var(--FONT-FAMILY);
   color: #fff;
  }
-#preLoader{
-  background: #21242D url(../images/loader\(2\).gif) no-repeat center center ;
-   background-size: 25%;
-  height: 100dvh;
-  width: 100%;
-  z-index: 9999;
-  position: fixed;
-}
-.fade-in{
-  animation: fade 2s ease-in forwards;
-  opacity: 0;
-}
+
+
 header{
   position :sticky;
  top: 0;
